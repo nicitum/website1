@@ -75,11 +75,11 @@ export default function Services() {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#003366]"
-          initial={{ opacity: 0, y: -20 }}
+      <motion.h2
+          className="text-3xl md:text-4xl font-semibold text-center mb-10 text-[#003366]"
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
         >
           Our Comprehensive Services
         </motion.h2>
