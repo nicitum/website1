@@ -44,7 +44,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-[#003366]">
-            Nicitums
+            Nicitum
           </Link>
 
           <div className="hidden md:flex space-x-8">
@@ -59,9 +59,13 @@ export default function Header() {
             ))}
           </div>
 
-          <button className="md:hidden text-[#003366]" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X /> : <Menu />}
-          </button>
+          <button
+  className="md:hidden text-[#003366]"
+  onClick={() => setIsOpen(!isOpen)}
+  aria-label={isOpen ? "Close menu" : "Open menu"} // ✅ Added aria-label
+>
+  {isOpen ? <X /> : <Menu />}
+</button>
         </nav>
       </div>
 
