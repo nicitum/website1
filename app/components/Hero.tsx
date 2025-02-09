@@ -34,10 +34,14 @@ export default function Hero() {
               className="inline-block w-1 h-10 bg-[#003366] ml-1"
             />
           </h1>
-          <p className="text-xl mb-8">
-            With over two decades of expertise, we deliver cutting-edge software solutions to propel your business into
-            the future of technology.
-          </p>
+          <motion.p
+  className="text-2xl mb-4 leading-relaxed text-[#003366]"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+>
+  Driving innovation with cutting-edge software solutions.
+</motion.p>
           <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
