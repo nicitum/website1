@@ -44,7 +44,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-[#003366]">
-            Nicitum
+            Nicitums
           </Link>
 
           <div className="hidden md:flex space-x-8">
