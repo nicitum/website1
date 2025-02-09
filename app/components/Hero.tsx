@@ -35,12 +35,12 @@ export default function Hero() {
             />
           </h1>
           <motion.p
-  className="text-2xl mb-4 leading-relaxed text-[#003366]"
-  initial={{ opacity: 0, y: 20 }}
+  className="text-xl font-semibold mb-3 leading-snug text-[#003366]"
+  initial={{ opacity: 0, y: 10 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
+  transition={{ duration: 0.5, ease: "easeOut" }}
 >
-  Driving innovation with cutting-edge software solutions.
+  Cutting-edge software solutions that drive innovation.
 </motion.p>
           <motion.div
       initial={{ opacity: 0, y: 50 }}
